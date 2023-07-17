@@ -30,6 +30,14 @@ function App() {
       <input type="checkbox" name="exemplo" id="exemplo" />  
       <header>
         Header
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li></li>
+          </ul>
+        </nav>
+        <button>Contato</button>
       </header>
       <h1>Olá, mundo! Meu nome {name}. Meu nome tem {name.length} caracteres.</h1>
       <p>Texto</p>
