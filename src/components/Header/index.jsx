@@ -1,7 +1,14 @@
+import Logo from "../../assets/Logo.svg";
+import styles from "./style.module.css";
+
 export const Header = () => {
-    return(
-        <header>
-            <img src="" alt="Logo Fashion Store" />
-        </header>
-    )
-}
+   return (
+      <header>
+         <div className="container">
+            <div className={styles.flexBox}>
+               <img src={Logo} alt="Logo Fashion Store" />
+            </div>
+         </div>
+      </header>
+   );
+};

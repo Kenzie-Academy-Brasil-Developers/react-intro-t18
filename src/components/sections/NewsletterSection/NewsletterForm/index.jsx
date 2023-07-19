@@ -1,8 +1,8 @@
 export const NewsletterForm = () => {
     return(
-        <form>
+        <form className="form">
             <input type="email" name="email" id="email" placeholder="E-mail" />
-            <button type="submit">Cadastrar-se</button>
+            <button type="submit" className="btn">Cadastrar-se</button>
         </form>
     )
 }

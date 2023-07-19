@@ -4,6 +4,7 @@ import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { NewsletterSection } from "../../components/sections/NewsletterSection";
 import { ProductsSection } from "../../components/sections/ProductsSection";
+import { DefaultTemplate } from "../../components/DefaultTemplate";
 
 //Fragment - TAG FANTASMA
 //<></> - Essa sintaxe NÃO pode receber uma chave
@@ -11,15 +12,12 @@ import { ProductsSection } from "../../components/sections/ProductsSection";
 
 export const HomePage = () => {
    return (
-      <>
-         <Header />
-         <main>
-            <BannerSection />
-            <CategorySection />
-            <ProductsSection />
-            <NewsletterSection />
-         </main>
-         <Footer />
-      </>
+      <DefaultTemplate>
+         {/* Isso é o valor de children para DefaultTemplate */}
+         <BannerSection />
+         <CategorySection />
+         <ProductsSection />
+         <NewsletterSection />
+      </DefaultTemplate>
    );
 };
