@@ -1,18 +1,19 @@
 import { CategoryCard } from "./CategoryCard";
-import Categoria1 from "../../../assets/Categoria1.png";
-import Categoria2 from "../../../assets/Categoria2.png";
+import { categories } from "../../../data/categories";
+import styles from "./style.module.css";
 
 //CategoryCard();
 //Props - valores de Javascript
 
 export const CategorySection = () => {
    return (
-      <section>
+      <section id="categorias" className={styles.categorySection}>
          <div className="container">
             <h2 className="title2">Categorias</h2>
-            <ul>
-               <CategoryCard title="Sapatos" img={Categoria1} />
-               <CategoryCard title="Bolsas" img={Categoria2} />
+            <ul className={styles.categoryList}>
+               {categories.map((category) => (
+                  <CategoryCard key={category.id} title={category.name} img={category.img} />
+               ))}
             </ul>
          </div>
       </section>

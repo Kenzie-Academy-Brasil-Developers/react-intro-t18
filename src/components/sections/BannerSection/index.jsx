@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 export const BannerSection = () => {
    return (
-      <section className={styles.bannerSection}>
+      <section id="banner" className={styles.bannerSection}>
          <div className="container">
             <div className={styles.flexBox}>
                <img src={Banner} alt="Banner Principal" />
